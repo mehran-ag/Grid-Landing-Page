@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "inter-variable";
+  src: url("../assets/fonts/inter/inter-variable.ttf");
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --blue-200: hsl(224, 100%, 95%);
+  --blue-400: hsl(220, 100%, 64%);
+  --blue-600: hsl(228, 100%, 60%);
+  --blue-700: hsl(228, 99%, 58%);
+  --Black: hsl(0, 0%, 0%)
+}
+
+body {
+  background-color: var(--blue-600);
+  color: var(--white);
+  font-family: "inter";
+  font-size: 17px;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}

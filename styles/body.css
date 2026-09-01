@@ -1,0 +1,62 @@
+/* Style navigation menu links */
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  color: var(--white);
+}
+
+#logo {
+  padding: 14px 16px;
+}
+
+#logo::before {
+  content: "• ";
+  font-size: 30px;
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+
+
+/* Add a grey background color on mouse-over */
+#myLinks a:hover {
+  background-color: var(--blue-400);
+  cursor: pointer;
+}
+
+.icon:hover,
+.icon img:hover {
+  cursor: pointer;
+  background-color: var(--blue-400);
+}
+
+#myLinks {
+  position: absolute;
+  height: 100vh;
+  width: 40vh;
+  right: 0;
+  background-color: var(--blue-600);
+  display: none;
+}
+
+
+
+
+
+.main-container {
+  height: 80vh;
+}
+
+.item {
+  border: 1px solid var(--white);
+}
+
+.item:nth-child(3),
+.item:nth-child(4) {
+  border-top: none;
+}
+
+.item:nth-child(1),
+.item:nth-child(3) {
+  border-right: none;
+}
