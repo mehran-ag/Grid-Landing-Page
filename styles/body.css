@@ -1,27 +1,53 @@
 /* Style navigation menu links */
-.topnav a {
-  padding: 14px 16px;
+.topnav {
+  border-bottom: solid 1px var(--white-transparent);
+}
+
+#logo {
+  padding: 1rem 1.2rem;
+}
+
+.top-menu,
+.close-icon {
+  padding: 1rem 1.2rem;
   text-decoration: none;
   display: block;
   color: var(--white);
 }
 
-#logo {
-  padding: 14px 16px;
+.close-icon:hover {
+  background-color: var(--blue-400);
+}
+
+#myLinks a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.15rem 0;
+  color: var(--white);
+  margin: 0.1rem;
+  margin-right: 1.5rem;
+}
+
+#first-a {
+  margin-top: 3rem;
+}
+
+#myLinks a.close-icon {
+  padding: 1rem 0.25rem;
 }
 
 #logo::before {
   content: "• ";
-  font-size: 30px;
-  margin-right: 5px;
+  font-size: 2rem;
   vertical-align: -3px;
 }
 
 
 /* Add a grey background color on mouse-over */
 #myLinks a:hover {
-  background-color: var(--blue-400);
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .icon:hover,
@@ -33,14 +59,11 @@
 #myLinks {
   position: absolute;
   height: 100vh;
-  width: 40vh;
+  width: 20vh;
   right: 0;
   background-color: var(--blue-600);
   display: none;
 }
-
-
-
 
 
 .main-container {
@@ -48,7 +71,8 @@
 }
 
 .item {
-  border: 1px solid var(--white);
+  border: 1px solid var(--white-transparent);
+  padding: 2rem;
 }
 
 .item:nth-child(3),
@@ -59,4 +83,28 @@
 .item:nth-child(1),
 .item:nth-child(3) {
   border-right: none;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+  border-top: none;
+}
+
+.main-container {
+  background-color: var(--blue-700);
+  padding-left: 2rem;
+}
+
+.main-container .row {
+  height: 100%;
+}
+
+.main-container .row .row {
+  height: 100%;
+}
+
+.main-text {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  margin-bottom: 3rem;
 }

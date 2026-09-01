@@ -42,23 +42,29 @@
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <div class="d-flex justify-content-end">
-            <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+            <a class="close-icon" href="javascript:void(0);" onclick="myFunction()">
             <img src="assets/images/icon-close.svg" alt="Close">
           </a>
         </div>
-        <div class="d-flex justify-content-end">
-          <a href="#news">News</a>
+        <div class="d-flex justify-content-end" id="first-a">
+          <a href="#news">About</a>
         </div>
         <div class="d-flex justify-content-end">
-          <a href="#contact">Contact</a>
+          <a href="#contact">Our Work</a>
         </div>
         <div class="d-flex justify-content-end">
-          <a href="#about">About</a>
+          <a href="#about">Partners</a>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a href="#about">Annual Report</a>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a href="#about">Donate</a>
         </div>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <div class="col d-flex justify-content-end">
-        <a href="javascript:void(0);" class="icon"  onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon top-menu"  onclick="myFunction()">
           <img src="assets/images/icon-menu.svg" alt="Menu">
         </a>
       </div>
@@ -69,8 +75,8 @@
   <!-- Hero -->
    <div class="container-fluid main-container">
     <div class="row">
-      <div class="col">
-        <p>
+      <div class="col d-flex flex-column justify-content-center left-col">
+        <p class="main-text">
           A classroom for every child.
         </p>
         <p>

@@ -5,7 +5,7 @@
 
 :root {
   --white: hsl(0, 0%, 100%);
-
+  --white-transparent: hsl(0 0% 100% / 50%);
   --blue-200: hsl(224, 100%, 95%);
   --blue-400: hsl(220, 100%, 64%);
   --blue-600: hsl(228, 100%, 60%);
