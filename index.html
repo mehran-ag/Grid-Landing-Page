@@ -39,14 +39,22 @@
           Bridge Collective
         </p>
       </div>
+
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <div class="col d-flex justify-content-end">
+        <a href="javascript:void(0);" class="hamburger-menu"  onclick="myFunction()">
+          <img src="assets/images/icon-menu.svg" alt="Menu">
+        </a>
+      </div>
+
       <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
+      <div id="menuItems">
         <div class="d-flex justify-content-end">
             <a class="close-icon" href="javascript:void(0);" onclick="myFunction()">
             <img src="assets/images/icon-close.svg" alt="Close">
           </a>
         </div>
-        <div class="d-flex justify-content-end" id="first-a">
+        <div class="d-flex justify-content-end" id="first-menu-item">
           <a href="#news">About</a>
         </div>
         <div class="d-flex justify-content-end">
@@ -62,39 +70,39 @@
           <a href="#about">Donate</a>
         </div>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <div class="col d-flex justify-content-end">
-        <a href="javascript:void(0);" class="icon top-menu"  onclick="myFunction()">
-          <img src="assets/images/icon-menu.svg" alt="Menu">
-        </a>
-      </div>
     </div>
    </nav>
-  
 
   <!-- Hero -->
-   <div class="container-fluid main-container">
-    <div class="row">
+   <div class="container-fluid body-container">
+    <div class="row h-100">
       <div class="col d-flex flex-column justify-content-center left-col">
         <p class="main-text">
           A classroom for every child.
         </p>
-        <p>
+        <p class="dscr-txt">
           We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
         </p>
       </div>
       <div class="col">
-        <div class="row row-cols-2 g-0">
+        <div class="row h-100 row-cols-2 g-0">
           <div class="col item">
-            <p>
-              2.4M
-            </p>
-            <p>
-              Students reached
-            </p>
-            <p>
-              Across 31 countries since 2011.
-            </p>
+            <div class="container h-100 d-flex flex-column p-0">
+              <div class="row h-100 p-0 d-flex justify-content-between">
+                <div class="col ms-0 ps-0">
+                  <img src="assets/images/icon-sparkle.svg">
+                </div>
+                <div class="col me-0 pe-0 d-flex justify-content-end">
+                  <p>2.4M</p>
+                </div>
+              </div>
+              <div class="row h-100 align-content-end">
+                <div class="col ms-0 ps-0">
+                  <p class="grid-main-txt">Students reached</p>
+                  <p class="grid-sub-txt">Across 31 countries since 2011.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col item">
             <p>

@@ -7,56 +7,55 @@
   padding: 1rem 1.2rem;
 }
 
-.top-menu,
-.close-icon {
-  padding: 1rem 1.2rem;
-  text-decoration: none;
-  display: block;
-  color: var(--white);
-}
-
-.close-icon:hover {
-  background-color: var(--blue-400);
-}
-
-#myLinks a {
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  padding: 0.15rem 0;
-  color: var(--white);
-  margin: 0.1rem;
-  margin-right: 1.5rem;
-}
-
-#first-a {
-  margin-top: 3rem;
-}
-
-#myLinks a.close-icon {
-  padding: 1rem 0.25rem;
-}
-
 #logo::before {
   content: "• ";
   font-size: 2rem;
   vertical-align: -3px;
 }
 
+.hamburger-menu,
+.close-icon {
+  padding: 1rem 1.2rem !important;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.close-icon {
+  margin-right: 0 !important;
+  margin-top: 0.5rem !important;
+}
+
+.hamburger-menu img,
+.close-icon img {
+  height: 25px;
+  width: auto;
+}
+
+#menuItems a {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.15rem 0;
+  color: var(--white);
+  margin: 0.1rem;
+  margin-right: 1.0rem;
+}
+
+#first-menu-item {
+  margin-top: 2rem;
+}
+
 
 /* Add a grey background color on mouse-over */
-#myLinks a:hover {
+#menuItems a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.icon:hover,
-.icon img:hover {
-  cursor: pointer;
-  background-color: var(--blue-400);
-}
-
-#myLinks {
+#menuItems {
   position: absolute;
   height: 100vh;
   width: 20vh;
@@ -66,7 +65,7 @@
 }
 
 
-.main-container {
+.body-container {
   height: 80vh;
 }
 
@@ -90,21 +89,28 @@
   border-top: none;
 }
 
-.main-container {
+.body-container {
   background-color: var(--blue-700);
   padding-left: 2rem;
 }
 
-.main-container .row {
-  height: 100%;
-}
 
-.main-container .row .row {
-  height: 100%;
-}
 
 .main-text {
   font-size: 3rem;
   line-height: 3.5rem;
   margin-bottom: 3rem;
+}
+
+.dscr-txt {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.785);
+}
+
+.grid-main-txt {
+  font-size: 1rem;
+}
+
+.grid-sub-txt {
+  font-size: 0.8rem;
 }
