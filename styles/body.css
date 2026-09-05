@@ -82,6 +82,8 @@ body {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
 }
 
 .blue-bg {
@@ -225,6 +227,22 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     min-height: 1000px;
+  }
+
+  .grid-item-container:nth-child(2),
+  .grid-item-container:nth-child(4) {
+    border: 1px solid var(--white-transparent);
+  }
+
+  .grid-item-container:nth-child(1),
+  .grid-item-container:nth-child(2),
+  .grid-item-container:nth-child(3) {
+    border-bottom: none;
+  }
+
+  .grid-item-container:nth-child(1),
+  .grid-item-container:nth-child(3) {
+    border: 1px solid var(--white-transparent);
   }
 
   .footer {
