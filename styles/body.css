@@ -69,6 +69,10 @@
   height: 80vh;
 }
 
+.blue-bg {
+  background-color: blue !important;
+}
+
 .item {
   border: 1px solid var(--white-transparent);
   padding: 2rem;
