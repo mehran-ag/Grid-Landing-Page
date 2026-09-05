@@ -167,6 +167,7 @@
     width: 100%;
     top: 0;
     display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
   }
@@ -195,6 +196,10 @@
   .item:nth-child(2),
   .item:nth-child(3) {
     border-bottom: none !important;
+  }
+
+  .body-container {
+    height: auto;
   }
 
 }
