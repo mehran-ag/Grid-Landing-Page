@@ -229,9 +229,13 @@ body {
     min-height: 1000px;
   }
 
+  .grid-item-container:nth-child(1) {
+    border-top: none;
+  }
+
   .grid-item-container:nth-child(2),
   .grid-item-container:nth-child(4) {
-    border: 1px solid var(--white-transparent);
+    border-right: 1px solid var(--white-transparent);
   }
 
   .grid-item-container:nth-child(1),
@@ -242,7 +246,7 @@ body {
 
   .grid-item-container:nth-child(1),
   .grid-item-container:nth-child(3) {
-    border: 1px solid var(--white-transparent);
+    border-right: 1px solid var(--white-transparent);
   }
 
   .footer {
