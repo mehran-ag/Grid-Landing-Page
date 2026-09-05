@@ -25,152 +25,113 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/general copy.css">
+  <link rel="stylesheet" href="styles/body copy.css">
 
 </head>
 <body>
 
-  <!-- Nav -->
-  <nav class="topnav container-fluid">
-    <div class="row">
-      <div class="col">
-        <p id="logo">
-          Bridge Collective
-        </p>
-      </div>
+  <!--Top navigation bar-->
+  <!--The logo of the website-->
+  <nav class="top-navbar">
+    <div class="top-logo">
+      <p class="top-logo-txt">
+        Bridge Collective
+      </p>
+    </div>
 
-       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <div class="col d-flex justify-content-end">
-        <a href="javascript:void(0);" class="hamburger-menu"  onclick="myFunction()">
-          <img src="assets/images/icon-menu.svg" alt="Menu">
-        </a>
-      </div>
+    <!--Hamburger menu on the right side of the navigation bar-->
+    <div class="icon-menu">
+      <button href="javascript:void(0);" class="hamburger-menu-link" onclick="myFunction()">
+        <img class="icon-menu-img" src="assets/images/icon-menu.svg">
+      </button>
+    </div>
 
-      <!-- Navigation links (hidden by default) -->
-      <div id="menuItems">
-        <div class="d-flex justify-content-end">
-            <a class="close-icon" href="javascript:void(0);" onclick="myFunction()">
-            <img src="assets/images/icon-close.svg" alt="Close">
-          </a>
+    <!--The links of the hamburger menu-->
+    <div id="menu-items-container" >
+      <div class="icon-close">
+        <button class="icon-close-link" onclick="myFunction()">
+          <img src="assets/images/icon-close.svg">
+        </button>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item-link">About</a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item-link">Our Work</a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item-link">Partners</a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item-link">Annual Report</a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item-link">Donate</a>
+      </div>
+    </div>
+
+  </nav>
+
+
+
+  <div class="main-body-container">
+    <div class="left-container">
+      <p class="main-txt-title">
+        A classroom for every child.
+      </p>
+      <p class="main-txt">
+        We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
+      </p>
+    </div>
+    <div class="right-grid">
+      <div class="grid-item-container">
+        <div class="grid-item-header-container">
+          <img class="grid-item-icon" src="assets/images/icon-sparkle.svg">
+          <p class="grid-item-header-txt">2.4M</p>
         </div>
-        <div class="d-flex justify-content-end menu-item" id="first-menu-item">
-          <a href="#news">About</a>
+        <div class="grid-item-txt-container">
+          <p class="grid-main-txt">Students reached</p>
+          <p class="grid-sub-txt">Across 31 countries since 2011.</p>
         </div>
-        <div class="d-flex justify-content-end menu-item">
-          <a href="#contact">Our Work</a>
+      </div>
+      <div class="grid-item-container">
+        <div class="grid-item-header-container">
+          <img class="grid-item-icon" src="assets/images/icon-plus.svg">
+          <p class="grid-item-header-txt">1,284</p>
         </div>
-        <div class="d-flex justify-content-end menu-item">
-          <a href="#about">Partners</a>
+        <div class="grid-item-txt-container">
+          <p class="grid-main-txt">Schools partnered</p>
+          <p class="grid-sub-txt">In 14 countries, from Kenya to Guatemala.</p>
         </div>
-        <div class="d-flex justify-content-end menu-item">
-          <a href="#about">Annual Report</a>
+      </div>
+      <div class="grid-item-container">
+        <div class="grid-item-header-container">
+          <img class="grid-item-icon" src="assets/images/icon-arrow-right.svg">
+          <p class="grid-item-header-txt">38K</p>
         </div>
-        <div class="d-flex justify-content-end menu-item">
-          <a href="#about">Donate</a>
+        <div class="grid-item-txt-container">
+          <p class="grid-main-txt">Teachers trained</p>
+          <p class="grid-sub-txt">Equipped with modern tools and methodology.</p>
+        </div>
+      </div>
+      <div class="grid-item-container">
+        <div class="grid-item-header-container">
+          <img class="grid-item-icon" src="assets/images/icon-trending-up.svg">
+          <p class="grid-item-header-txt">3.1×</p>
+        </div>
+        <div class="grid-item-txt-container">
+          <p class="grid-main-txt">Graduation lift</p>
+          <p class="grid-sub-txt">Partner schools outperform national averages 3x.</p>
         </div>
       </div>
     </div>
-   </nav>
+  </div>
 
-  <!-- Hero -->
-   <div class="container-fluid body-container p-0">
-    <div class="row h-100 row-cols-1 row-cols-sm-2 g-0">
-      <div class="col p-4 d-flex flex-column justify-content-center left-col">
-        <p class="main-text">
-          A classroom for every child.
-        </p>
-        <p class="dscr-txt">
-          We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
-        </p>
-      </div>
-      <div class="col p-0">
-        <div class="row h-100 row-cols-1 row-cols-sm-2 g-0 p-0">
-          <div class="col item">
-            <div class="container h-100 d-flex flex-column p-0">
-              <div class="row h-100 d-flex justify-content-between">
-                <div class="col ms-0 ps-0">
-                  <img src="assets/images/icon-sparkle.svg" class="icon-img">
-                </div>
-                <div class="col me-0 pe-0 d-flex justify-content-end">
-                  <p class="top-text">2.4M</p>
-                </div>
-              </div>
-              <div class="row h-100 align-content-end">
-                <div class="col ms-0 ps-0">
-                  <p class="grid-main-txt">Students reached</p>
-                  <p class="grid-sub-txt">Across 31 countries since 2011.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col item">
-            <div class="container h-100 d-flex flex-column p-0">
-              <div class="row h-100 p-0 d-flex justify-content-between">
-                <div class="col ms-0 ps-0">
-                  <img src="assets/images/icon-plus.svg" class="icon-img">
-                </div>
-                <div class="col me-0 pe-0 d-flex justify-content-end">
-                  <p class="top-text">1,284</p>
-                </div>
-              </div>
-              <div class="row h-100 align-content-end">
-                <div class="col ms-0 ps-0">
-                  <p class="grid-main-txt">Schools partnered</p>
-                  <p class="grid-sub-txt">In 14 countries, from Kenya to Guatemala.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col item m-0">
-            <div class="container h-100 d-flex flex-column p-0">
-              <div class="row h-100 p-0 d-flex justify-content-between">
-                <div class="col ms-0 ps-0">
-                  <img src="assets/images/icon-arrow-right.svg" class="icon-img">
-                </div>
-                <div class="col me-0 pe-0 d-flex justify-content-end">
-                  <p class="top-text">38K</p>
-                </div>
-              </div>
-              <div class="row h-100 align-content-end">
-                <div class="col ms-0 ps-0">
-                  <p class="grid-main-txt">Teachers trained</p>
-                  <p class="grid-sub-txt">Euipped with modern tools and methodology.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col item m-0">
-            <div class="container h-100 d-flex flex-column p-0">
-              <div class="row h-100 p-0 d-flex justify-content-between">
-                <div class="col ms-0 ps-0">
-                  <img src="assets/images/icon-trending-up.svg" class="icon-img">
-                </div>
-                <div class="col me-0 pe-0 d-flex justify-content-end">
-                  <p class="top-text">3.1×</p>
-                </div>
-              </div>
-              <div class="row h-100 align-content-end">
-                <div class="col ms-0 ps-0">
-                  <p class="grid-main-txt">Graduation lift</p>
-                  <p class="grid-sub-txt">Partner schools outperform national averages 3x.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-   </div>
-  
-   <footer class="footer">
-    <p>
-      © 2026 Bridge Collective
-    </p>
-    <p>
-      Registered charity 12345678
-    </p>
-   </footer>
+  <footer class="footer">
+    <p class="footer-txt">© 2026 Bridge Collective</p>
+    <p class="footer-txt">Registered charity 12345678</p>
+  </footer>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
@@ -178,7 +139,6 @@
   </div>
 
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"></script>
   <script src="scripts/myFunction.js"></script>
 </body>
 </html>
